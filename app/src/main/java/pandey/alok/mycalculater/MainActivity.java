@@ -14,16 +14,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button = findViewByid(R.id.button);
+//        button = findViewByid(R.id.button);
+        button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
-                                      @Override
-                                      public void onClick(View v) {
-                                          Toast.makeText(MainActivity.this,
-                                                  "hello chail bhiari", Toast.LENGTH_SHORT).show();
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this,
+                        "hello chail bhiari", Toast.LENGTH_SHORT).show();
 
-                                      }
-                                  }
-
-        )
+            }
+        });
     }
 }
